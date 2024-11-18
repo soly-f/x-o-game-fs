@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Comptible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tic-tac-toe (American English),  game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. It is a solved game, with a forced draw assuming best play from both players. - Tic-tac-toe (الإنجليزية الأمريكية)، لعبة للاعبين يتناوبون في تحديد المسافات في شبكة ثلاثية في ثلاثة باستخدام X أو O. اللاعب الذي ينجح في وضع ثلاث من علاماته بشكل أفقي أو رأسي أو الصف القطري هو الفائز. إنها لعبة محلولة، مع افتراض التعادل القسري لأفضل لعب من كلا اللاعبين.-Tic-tac-toe-(X-O Game)-Games-العاب  FSAF">
+  <meta name="Keywords" content="Tic-tac-toe , (X-O Game), Games , game , flash game , flash games , flash , flash games online , online games , Game , Intelligence games , Mind games ,Skill development gamesames , العاب رياضيات , رياضيات. ">
+
+    <title> X-O Game - FSAF</title>
+
+    <!-- DynaPuff Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/x-o.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+
+           
+        <a href="#" class="logo">Games-FSAF</a>
+         <div class="container-h">
+         
+          <div class="btn"><a href="#">Home   ---------></a></div>
+        
+                 
+                  
+         </div>
+        </header>
+
+        
+
+    <!-- Player Selection -->
+    <div class="selection">
+        <h2>X - O</h2>
+        <p>Select Your Player</p>
+        <div class="players">
+            <button
+                class="player"
+                onClick="playerSelect('X')"
+            >
+                X
+            </button>
+            <button
+                class="player"
+                onClick="playerSelect('O')"
+            >
+                O
+            </button>
+        </div>
+    </div>
+
+    <!-- Playing Board -->
+    <div class="play-board">
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+
+        <!-- Reset Button -->
+        <button class="reset" onclick="startGame()">Reset</button>
+
+    </div>
+
+    <!-- Winner Declaration -->
+    <div class="winner">
+
+        <h3></h3>
+
+        <!-- Reset Button -->
+        <button class="reset" onclick="startGame()">Play Again</button>
+
+       
+
+    
+          
+    <!-- JS File -->
+    <script src="js/x-o.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
